@@ -1,7 +1,7 @@
 #Samba share for Docker
 FROM debian
 
-ENV DEBIAN_FRONTEND noninteractive
+ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update && apt-get install -y --no-install-recommends samba-common-bin samba
 
