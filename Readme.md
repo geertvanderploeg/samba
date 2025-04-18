@@ -1,8 +1,8 @@
-# Samba file server for Raspberry Pi
+# Samba file server for Docker
 
-Docker container that creates a SMB share.
+Docker container that creates SMB shares.
 
-Dockerfile: https://bitbucket.org/trnape/rpi-samba
+Forked from Dockerfile: https://bitbucket.org/trnape/rpi-samba
 
 
 ## Running
@@ -11,7 +11,7 @@ Dockerfile: https://bitbucket.org/trnape/rpi-samba
 docker run -d -p <docker_host_ip>:445:445 \
   -v /mnt/data:/share/data \
   -v /mnt/backups:/share/backups \
-  --name <container name> trnape/rpi-samba \
+  --name <container name> geertvanderploeg/samba \
   -u "alice:abc123" \
   -u "bob:secret" \
   -u "guest:guest" \

@@ -1,5 +1,5 @@
-#Samba share for Raspberry Pi
-FROM resin/rpi-raspbian:stretch
+#Samba share for Docker
+FROM debian
 
 ENV DEBIAN_FRONTEND noninteractive
 

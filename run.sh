@@ -47,7 +47,7 @@ Example:
 docker run -d -p 445:445 \\
   -v /mnt/data:/share/data \\
   -v /mnt/backups:/share/backups \\
-  trnape/rpi-samba \\
+  geertvanderploeg/samba \\
   -u "alice:abc123" \\
   -u "bob:secret" \\
   -u "guest:guest" \\
