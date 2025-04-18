@@ -103,4 +103,4 @@ EOH
 
 fi
 
-exec ionice -c 3 smbd -FS --configfile="$CONFIG_FILE" </dev/null
+exec ionice -c 3 smbd --foreground --configfile="$CONFIG_FILE" </dev/null
